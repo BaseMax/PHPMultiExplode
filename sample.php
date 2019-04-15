@@ -9,3 +9,8 @@
 * @Repository : https://github.com/BaseMax/PHPMultiExplode
 *
 **/
+include "MultiExplode.php";
+
+$input = "Hello,It is a document or a sample text for test the mexplode function.";
+$items = mexplode(array(",","."," "),$input);
+print_r($items);

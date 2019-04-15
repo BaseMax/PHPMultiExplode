@@ -9,7 +9,7 @@
 * @Repository : https://github.com/BaseMax/PHPMultiExplode
 *
 **/
-function mexplode($delimiters=null, $input) {
+function mexplode($delimiters=null, $input="") {
     if($delimiters === null || count($delimiters) == 0) {
         $delimiters=array(" ");
     }
@@ -18,7 +18,7 @@ function mexplode($delimiters=null, $input) {
     // $items = explode($delimiters[0], $ready);
     // return $items;
 }
-function mexplodes($delimiters=null, $input) {
+function mexplodes($delimiters=null, $input="") {
     if($delimiters === null || count($delimiters) == 0) {
         $delimiters=array(" ");
     }

@@ -9,3 +9,12 @@
 * @Repository : https://github.com/BaseMax/PHPMultiExplode
 *
 **/
+function mexplode($delimiters=null, $input) {
+    if($delimiters === null) {
+        $$delimiters=array(" ");
+    }
+    $input = str_replace($delimiters, $delimiters[0], $input);
+    return explode($delimiters[0], $input);
+    // $items = explode($delimiters[0], $ready);
+    // return $items;
+}
